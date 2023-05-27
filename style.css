@@ -1,0 +1,154 @@
+.header{
+    height:100px;
+    
+    background-color: #252525;
+}
+
+.navsticky{
+
+    position: sticky;
+    top: 0px;
+}
+.searchtab{
+ 
+    border: none;
+    background-color: transparent;
+/*    color: aqua; */
+    /* width: 20vw; */
+    
+}
+
+.searchtab:focus{
+
+    border-color: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+ 
+}
+.searchBtn{
+
+    background-color: #c09578;
+    color: white;
+    border: none;
+}
+
+.searchBtn:hover{
+
+    background-color: #b1866a;
+    color: white;
+    border: none;
+}
+.navcontainer{
+    background-color: #c09578;
+    overflow: hidden;
+
+
+}
+
+#navv{
+
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+.slidetxt{
+    background: transparent;
+}
+
+.bannerimg:hover{
+
+    -ms-zoom-animation: default;
+}
+
+.watches{
+
+    background-color: #252525;
+    height: auto;
+}
+.txt{
+
+    color: #c09578;
+}
+.cartBtn{
+
+    border: none;
+    background-color: transparent;
+    color: white;
+
+}
+.cartBtn:hover{
+
+    border-radius: 5px;
+    background-color: #c09578;
+    color: white;
+    
+}
+
+.hicon{
+
+    display: none;
+}
+
+.bseller:hover .hicon{
+
+display: block;
+
+}
+
+.bseller:hover {
+
+    opacity: 40%;
+}
+.colBtn{
+
+    border: none;
+    background-color: #b1866a;
+    color: white;
+    border-radius: 5px;
+
+}
+.colBtn:hover{
+
+    border: none;
+    background-color: #252525;
+    color: white;
+    border-radius: 5px;
+
+
+}
+
+.footer{
+
+    background-color: #252525;
+    height: 60vh;
+    
+}
+
+.footerlist{
+
+    list-style-type: none;
+
+}
+
+.footerlist li a{
+    text-decoration: none;
+    color: rgb(68, 64, 64);
+    line-height: 8vh;
+    
+}
+
+.footerlist li a:hover{
+    text-decoration: underline;
+    color:#b1866a;
+    
+}

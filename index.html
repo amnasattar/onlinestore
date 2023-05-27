@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="icon" href="images/siteTitle.png">
+    <link rel="stylesheet" href="css1/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />    
+    <link rel="stylesheet" href="style.css">
+<style>
+  /* :root {
+    --drop-color: #c09578;
+    /* --font-color: #B2F86D; */
+
+  
+</style>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementsById("navv");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+//   var i = 1;
+// var dropHeight =10;
+
+// function animateDrop() {
+//   setTimeout(function() {
+//     $("#logo").dropFont(i);
+//     i++;
+//     if (i < dropHeight)
+//       animateDrop();
+//   }, 15)
+// }
+// animateDrop();
+</script>
+</head>
+<body>
+  <div style="position: relative;">
+<!----------- main container  ---------->
+         <div class="container-fluid ">
+
+        <!-- Header container  -->
+        <div class="container-fluid header ">
+
+          <!-- 1st strip  -->
+        <div class="container py-2 " style="height: 30%;">
+          <marquee behavior="" direction="" >
+            <p class="text-secondary  ">Welcome to online store!</p>
+          </marquee>
+        </div>
+
+        <!----------- hr  ------------>
+        
+        <div class="container-fluid border-bottom border-secondary"></div>
+
+
+        <!------------- header  ----------->
+
+        <!-- logo  -->
+
+        <div class="container py-1 d-flex justify-content-md-between" style="height: 70%; width: 100%;">
+            <div>
+            <p id="logo" class="text-light display-4 fw-bolder">ekommart</p>
+            </div>
+
+            <!-- search bar -->
+            <div class="w-50 d-none d-md-block">
+
+                <div class="  border border-secondary p-2 d-flex justify-content-center align-items-center col-md-12">
+                    <i class="bi bi-search " style="color: #c09578;"></i>
+                    <input type="text" class="ps-4 w-100 searchtab text-secondary " placeholder="Have a question? Ask Now">
+                      <button class="btn searchBtn">Search</button>
+                    </div> 
+            </div>
+            <!-- icons  -->
+            <div class="icons d-flex justify-content-between py-2 d-none d-md-block">
+                <i class="bi bi-person h4 text-light pe-3" ></i>
+                <i class="bi bi-suit-heart  h4 text-light pe-3"></i>
+                <i class="bi bi-basket2 h4 text-light pe-3"></i>
+            </div>
+
+          
+            </div>
+
+        </div>
+
+                        <!-- Header end  -->
+        <!--------- Navbar ------ -->
+        
+        <div class="container-fluid navcontainer ">
+        <nav id="navv" class="container navbar navbar-expand-lg  ">
+            <div class="container-fluid">
+             
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Category</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navvarScrollingDropdown">
+                      <li><a href="#" class="dropdown-item">Mens Wear Shoes</a></li>
+                      <li><a href="#" class="dropdown-item">Kids Wear</a></li>
+                      <li><a href="#" class="dropdown-item">Makup</a></li>
+                      <li><a href="#" class="dropdown-item">Watches</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+            <!-- navbar end   -->
+            <div class="content" style="position:relative">
+            <!-- carousal start    -->
+            <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active position-relative">
+
+                    <div class="position-absolute z-1 slidetxt top-50 ps-5">
+                      <h1 class="text-light display-2" >The Icon Rolex</h1>
+                      <p class=" text-light display-5">This is para</p>
+                      <button class="btn btn-light text-dark">More Info</button>
+                  </div>
+                     <img src="images/slider1-h15.jpg" class="d-block w-100 position-relative z-0" alt="...">
+
+                    </div>
+                  <div class="carousel-item">
+                    <!-- <div class="position-absolute z-1 slidetxt top-50 ps-5">
+                      <h1 class="text-light display-2" >The Icon Rolex</h1>
+                      <p class=" text-light display-5">This is para</p>
+                      <button class="btn btn-light text-dark">More Info</button>
+                  </div> -->
+                  <img src="images/slider2-h15.jpg"  class="d-block w-100" alt="...">
+                   
+                  </div>
+                  <div class="carousel-item">
+
+                    <!-- <div class="position-absolute z-1 slidetxt top-50 ps-5">
+                      <h1 class="text-light display-2" >The Icon Rolex</h1>
+                      <p class=" text-light display-5">This is para</p>
+                      <button class="btn btn-light text-dark">More Info</button>
+                  </div> -->
+                    <img src="images/slider3-h15.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        <!-- carousal end    -->
+<div class="watches">
+
+<!-- cards  -->
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4 col-sm-12 card border-0 bg-transparent">
+
+              <img src="images/h15_banner-1.jpg" alt="">
+              <div class="card-img-overlay">
+
+                <h1 class="text-light py-5">NEW <br> COLLECTION </h1>
+                <a class="text-light fs-6" href="#">Shop Collection</a>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 card border-0 bg-transparent">
+
+              <img src="images/h15_banner-2.jpg" alt="">
+              <div class="card-img-overlay">
+
+                <h1 class="text-light py-5">NEW <br> COLLECTION</h1>
+
+                <a class="text-light fs-6" href="#">Shop Collection</a>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 card border-0 bg-transparent">
+
+              <img src="images/h15_banner-3.jpg" alt="">
+              <div class="card-img-overlay">
+
+                <h1 class="text-secondary py-5">NEW <br> COLLECTION</h1>
+                <a class="text-secondary fs-6" href="#">Shop Collection</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cards end  -->
+
+        <!-- Best Sellers start  -->
+          <div class="container">
+            <br>
+        <h1 class="text-capitalize txt">best sellers</h1>
+        <br>
+
+        <div class="d-flex justify-content-center flex-sm-wrap flex-md-nowrap">
+          <!-- Box 1 start  -->
+          <div class=" border border-secondary text-center position-relative bseller">
+            <!-- icon work -->
+            <div class="d-flex position-absolute justify-content-center top-50 hicon col-md-12 col-sm-12">
+              <div class="bg-light border border-dark  hicon">
+                <a href="#">
+                   <i class="bi bi-suit-heart text-dark h4 p-3"></i></a>
+
+              </div>
+              <div class="bg-light border border-dark hicon">
+               <a href="#"> <i class="bi bi-shuffle h4 p-3 text-dark"></i></a>
+              </div>
+              <div class="bg-light border border-dark  hicon ">
+               <a href="About.html"> <i class="bi bi-eye h4 p-3 text-dark"></i></a>
+              </div>
+            </div>
+            <!-- icon work end  -->
+          
+            <img src="images/ph15-17-450x450.png" alt="" width="257" height="257">
+
+            <p class="text-secondary">Watch</p>
+            <h6 class="text-light ">Black/Brown Suede Leather</h6>
+            <h6 class="text-light">Berkeley</h6>
+            <h6 class="txt">$177.63</h6>
+            
+            <button class="text-light h6 cartBtn p-2">Add to Cart</button>
+          </div>
+          <!-- box 1 end  -->
+          
+          <div class="  border border-secondary text-center position-relative bseller">
+
+            <div class="d-flex position-absolute justify-content-center top-50 hicon col-md-12 col-sm-12">
+              <div class="bg-light border border-dark  hicon">
+                <a href="#">
+                   <i class="bi bi-suit-heart text-dark h4 p-3"></i></a>
+
+              </div>
+              <div class="bg-light border border-dark hicon">
+               <a href="#"> <i class="bi bi-shuffle h4 p-3 text-dark"></i></a>
+              </div>
+              <div class="bg-light border border-dark  hicon ">
+               <a href="#"> <i class="bi bi-eye h4 p-3 text-dark"></i></a>
+              </div>
+            </div>
+
+
+            <img src="images/ph15-2.png" alt="" width="257" height="257">
+            <p class="text-secondary">Watch</p>
+            <h6 class="text-light ">Black/Brown Suede Leather</h6>
+            <h6 class="text-light">Berkeley</h6>
+            <h6 class="txt">$177.63</h6>
+            
+            <button class="text-light h6 cartBtn p-2">Add to Cart</button>
+          </div>
+
+          
+          <div class="border border-secondary text-center position-relative bseller">
+
+            <div class="d-flex position-absolute justify-content-center top-50 hicon col-md-12 col-sm-12">
+              <div class="bg-light border border-dark  hicon">
+                <a href="#">
+                   <i class="bi bi-suit-heart text-dark h4 p-3"></i></a>
+
+              </div>
+              <div class="bg-light border border-dark hicon">
+               <a href="#"> <i class="bi bi-shuffle h4 p-3 text-dark"></i></a>
+              </div>
+              <div class="bg-light border border-dark  hicon ">
+               <a href="#"> <i class="bi bi-eye h4 p-3 text-dark"></i></a>
+              </div>
+            </div>
+
+            <img src="images/ph15-3.png" alt="" width="257" height="257">
+            <p class="text-secondary">Watch</p>
+            <h6 class="text-light ">Black/Brown Suede Leather</h6>
+            <h6 class="text-light">Berkeley</h6>
+            <h6 class="txt">$177.63</h6>
+            
+            <button class="text-light h6 cartBtn p-2">Add to Cart</button>
+          </div>
+
+          
+          <div class=" border border-secondary text-center position-relative bseller">
+
+
+            <div class="d-flex position-absolute justify-content-center top-50 hicon col-md-12 col-sm-12">
+              <div class="bg-light border border-dark  hicon">
+                <a href="#">
+                   <i class="bi bi-suit-heart text-dark h4 p-3"></i></a>
+
+              </div>
+              <div class="bg-light border border-dark hicon">
+               <a href="#"> <i class="bi bi-shuffle h4 p-3 text-dark"></i></a>
+              </div>
+              <div class="bg-light border border-dark  hicon ">
+               <a href="#"> <i class="bi bi-eye h4 p-3 text-dark"></i></a>
+              </div>
+            </div>
+
+
+            <img src="images/ph15-4.png" alt="" width="257" height="257">
+            <p class="text-secondary">Watch</p>
+            <h6 class="text-light ">Black/Brown Suede Leather</h6>
+            <h6 class="text-light">Berkeley</h6>
+            <h6 class="txt">$177.63</h6>
+            
+            <button class="text-light h6 cartBtn p-2">Add to Cart</button>
+          </div>
+
+          
+          <div class=" border border-secondary text-center position-relative bseller">
+
+
+            <div class="d-flex position-absolute justify-content-center top-50 hicon col-md-12 col-sm-12">
+              <div class="bg-light border border-dark  hicon">
+                <a href="#">
+                   <i class="bi bi-suit-heart text-dark h4 p-3"></i></a>
+
+              </div>
+              <div class="bg-light border border-dark hicon">
+               <a href="#"> <i class="bi bi-shuffle h4 p-3 text-dark"></i></a>
+              </div>
+              <div class="bg-light border border-dark  hicon ">
+               <a href="#"> <i class="bi bi-eye h4 p-3 text-dark"></i></a>
+              </div>
+            </div>
+
+
+            <img src="images/ph15-5.png" alt="" width="257" height="257">
+            <p class="text-secondary">Watch</p>
+            <h6 class="text-light ">Black/Brown Suede Leather</h6>
+            <h6 class="text-light">Berkeley</h6>
+            <h6 class="txt">$177.63</h6>
+            
+            <button class="text-light h6 cartBtn p-2">Add to Cart</button>
+
+            <h1>Names</h1>
+          </div>
+        </div>
+
+      </div>
+
+
+        <!--// Best Sellers end  -->
+
+
+
+
+      </div>
+      <!-- watches end   -->
+         
+
+      <!-- Timmer start -->
+
+      <div class=" container-fluid " style="background-image: url(images/h15-bg.jpg);">
+
+        <div class="container ">
+          <div class="row">
+<div class="col-md-6 p-5">
+
+<h6 class="txt mt-5">SALE UP TO 75% OFF!</h6>
+
+<h1 id="animate" class="text-light display-2 fw-bolder">Platinum Design</h1>
+
+<p class="text-secondary">Give a Symbol of your never – Ending love</p>
+<br>
+<button class="colBtn text-light h5 p-2 ">Collection</button>
+</div>
+<div class="col-md-6">
+
+  <img src="images/h15_watch.png" alt="">
+</div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Footer Start  -->
+
+<div class="container-fluid footer">
+<div class="row">
+
+  <!-- column 1 start -->
+  <div class="col-md-4 col-sm-12 border-end border-secondary">
+
+    <h6 class="text-light ps-5 pt-5">OUR STORE</h6>
+
+    <div class="row m-auto">
+      <div class="col-md-6">
+    <ul class="footerlist">
+      <li> <a class="" href="#"> New York</a> </li>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Cockfosters BP</a></li>
+      <li><a href="#">Los Angeles</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="col-md-6">
+    <ul class="footerlist">
+  <li><a href="#">Chicago</a></li>
+      <li><a href="#">Las Vegas</a></li>
+      <li><a href="#">Texas</a></li>
+
+      </ul>
+      </div>
+  </div>
+  </div>
+   <!-- column 1 end  -->
+
+   <!-- column 2 start  -->
+
+  <div class="col-md-4 col-sm-12 border-end border-secondary ">
+
+    <p class="text-light h1 text-center p-5">ekommart</p>
+
+    <div class="row ps-5 m-auto">
+      <div class="col-md-2 ps-4 pt-3">
+
+        <i class="bi bi-telephone-plus-fill txt h4 "></i>
+      </div>
+      <div class="col-md-10"> 
+
+        <p class="text-light">Got Questions ? Call us 24/7!  </p>
+        <h5 class="txt">+633 497-188-8553</h5>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- column 2 end  -->
+
+  <!-- column 3 start  -->
+
+  <div class="col-md-4 col-sm-12">
+
+    <h6 class="text-light ps-5 pt-5">INFORMATION</h6>
+
+    <div class="row  m-auto">
+
+      <div class="col-md-6 ">      
+        
+        <ul class="footerlist">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+      </div>
+
+      <div class="col-md-6 ">
+
+ 
+        <ul class="footerlist">
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Wish List</a></li>
+          <li><a href="#">My Peronal Info</a></li>
+          </ul>
+      </div>
+      </div>
+
+    </div>
+
+    <!-- column 3 end  -->
+  </div>
+</div>
+
+<!-- footer columns end  -->
+
+<!-- subscription form start  -->
+
+<div class="container-fluid bg-dark " style="height: 15vh;">
+  <div class="row">
+<!-- column 1  -->
+  <div class="col-md-3 d-sm-none d-md-block">
+    <div class="row m-3">
+      <div class="col-md-3">
+      <i class="bi bi-envelope-open text-light h3"></i>
+    </div>
+    <div class="col-md-9 border-end border-secondary">
+    <p class="text-light h6">SIGN UP TO NEWSLETTER</p>
+  </div>
+  </div>
+
+  </div>
+<!-- column 1 end  -->
+
+<!-- column 2 start   -->
+  <div class="col-md-6 d-sm-none d-md-block border-end border-secondary">
+    <div class="d-flex justify-content-between m-1">
+ <p class="text-secondary">Subscribe to the weekly newsletter  <br> for all the latest updates</p>
+
+ <!-- search bar -->
+ <div class="w-25 d-none d-md-block">
+
+  <div class="  border border-secondary p-2 d-flex justify-content-center align-items-center col-md-12">
+   
+      <i class="bi bi-search " style="color: #c09578;"></i>
+      <input type="text" class="form-control searchtab text-secondary " placeholder="Have a question? Ask Now">
+        <button class="btn searchBtn">Search</button>
+      </div> 
+</div>
+
+<!-- search bar end  -->
+
+</div>
+  </div>
+<!-- column 2 end  -->
+
+<!-- column 3 start  -->
+  <div class="col-md-3 d-sm-none d-md-block">
+    <div class="d-flex justify-content-center">
+
+      <a class="p-3" href="#"><i class="bi bi-facebook text-light "></i></a>
+      <a class="p-3" href="#"><i class="bi bi-instagram text-light"></i></a>
+        <a class="p-3" href="#"><i class="bi bi-twitter text-light"></i></a>
+          <a class="p-3" href="#"> <i class="bi bi-youtube text-light"></i></a>
+
+    </div>
+  </div>
+<!-- column 3 end  -->
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+<!-- subscription form end  -->
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+<script src="dropFont.js"></script>
+<!-- <script>
+  // $(document).on("scroll" , function(){
+
+  var i = 1;
+var dropHeight = 10;
+function animateDrop() {
+  setTimeout(function() {
+    $("#animate").dropFont(i);
+    i++;
+    if (i < dropHeight)
+      animateDrop();
+  }, 15)
+}
+
+animateDrop(); -->
+<!-- // }); -->
+<!-- </script> -->
+
+    <script src="js2/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
